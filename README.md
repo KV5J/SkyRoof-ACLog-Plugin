@@ -9,7 +9,7 @@ Written by Keith, KV5J.
 ## What it does
 
 - Sends each QSO logged in SkyRoof straight to AC Log
-- Includes the satellite details AC Log and LoTW need: [satellite name, propagation mode SAT, frequencies, mode, grid]
+- Includes the satellite details AC Log and LoTW need: satellite name, propagation mode SAT, frequencies, mode, grid.
 - Looks up the station in the callbook so name, QTH, and other details fill in automatically
 - Works with AC Log's normal LoTW upload, so your satellite contacts confirm like any other QSO
 
@@ -28,14 +28,23 @@ Written by Keith, KV5J.
    **Properties**, check **Unblock** at the bottom, and click **OK**.
    (Windows blocks downloaded DLLs, and SkyRoof may silently ignore a blocked plugin.)
 3. Close SkyRoof.
-4. Copy `LoggerInterface.dll and LoggerInterface,dll` into the SkyRoof main program folder..
-   They replaces existing files, I suggest keeping a backup.
+4. 4. Copy `LoggerInterface.dll` and `LoggerInterface.ini` into the SkyRoof main program folder.
+   They replace the existing files, so keep a backup of the originals.
 5. Start SkyRoof.
 
 ## Setting up AC Log
 
 1. In AC Log, open **Settings → Application Program Interface (API)**.
 2. Check **TCP API Enabled**. Leave the port at **1100** unless you've changed it.
+3. ## Settings (LoggerInterface.ini)
+
+| Setting | Default | What it does |
+|---|---|---|
+| Host | 127.0.0.1 | Address of the PC running AC Log (leave as-is if it's the same PC) |
+| Port | 1100 | AC Log's TCP API port |
+| LookupWaitMs | 2000 | How long (in milliseconds) to wait for AC Log's callbook lookup before saving the QSO |
+| NewFileEvery | Year | How often the plugin starts a new file |
+| Debug | 0 | Set to 1 to turn on debug logging for troubleshooting |
 
 ## Setting up SkyRoof
 
@@ -54,7 +63,7 @@ with callbook details filled in. Upload to LoTW from AC Log as you normally do.
   of Installation), then re-copy the DLL.
 - **Antivirus warning.** Some antivirus programs flag unsigned DLLs. The full source code
   is in this repository if you'd like to review it or build it yourself.
-- **Callbook info is missing.** Check callbook login/subscription settings
+- "Callbook info is missing. Check that callbook lookup is set up and working in AC Log itself. On a slow connection, try raising LookupWaitMs to 3000 or more."
 
 ## Reporting problems
 
