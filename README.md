@@ -20,6 +20,23 @@ Written by Keith, KV5J.
 - N3FJP Amateur Contact Log version 7.0.12.1 or later
 - No changes are needed to AC Log except those listed below
 
+- ## ⚠️ Before you install: Windows file warnings
+
+Because this plugin is a small, unsigned DLL from an independent developer, Windows
+and some antivirus programs may be cautious with it. This is normal and expected.
+
+- **Windows blocks downloaded files.** After downloading, right-click the zip file,
+  choose **Properties**, check **Unblock** at the bottom, and click **OK** *before*
+  extracting. If you skip this, SkyRoof may silently ignore the plugin.
+- **Your browser may warn you** that the file "isn't commonly downloaded." Choose
+  **Keep** (Edge: click the **...** menu, then **Keep**).
+- **Your antivirus may flag the DLL.** This is a common false alarm with unsigned
+  DLLs. The complete source code is in this repository, so anyone can review exactly
+  what it does or build it themselves.
+- **Only download from the official
+  Releases page(https://github.com/KV5J/SkyRoof-ACLog-Plugin/releases/latest).**
+  Copies posted elsewhere may have been altered.
+
 ## Installation
 
 1. Download the latest zip from the
