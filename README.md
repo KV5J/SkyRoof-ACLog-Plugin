@@ -1,6 +1,6 @@
 # SkyRoof → N3FJP AC Log Plugin
 
-A logger plugin for [SkyRoof](https://ve3nea.github.io/SkyRoof/) by VE3NEA that sends
+A logger plugin for SkyRoof https://ve3nea.github.io/SkyRoof/) by VE3NEA that sends
 your satellite QSOs directly to **N3FJP's Amateur Contact Log (AC Log)**, with callbook
 lookup, so you never have to retype a contact.
 
@@ -16,32 +16,30 @@ Written by Keith, KV5J.
 ## Requirements
 
 - Windows
-- SkyRoof version [1.52] or later
-- N3FJP Amateur Contact Log version [x.x] or later
-- [Callbook subscription, e.g. QRZ XML, if required for lookups]
+- SkyRoof version 1.55 or later
+- N3FJP Amateur Contact Log version 7.0.12.1 or later
+- No changes are needed to AClog except listed below.
 
 ## Installation
 
 1. Download the latest zip from the
-   [Releases page](https://github.com/KV5J/SkyRoof-ACLog-Plugin/releases/latest).
+   Releases page (https://github.com/KV5J/SkyRoof-ACLog-Plugin/releases/latest).
 2. **Unblock the zip before extracting it.** Right-click the zip file, choose
    **Properties**, check **Unblock** at the bottom, and click **OK**.
    (Windows blocks downloaded DLLs, and SkyRoof may silently ignore a blocked plugin.)
 3. Close SkyRoof.
-4. Copy `LoggerInterface.dll` into [the SkyRoof plugin folder, e.g. `C:\...\SkyRoof\Plugins`].
-   [If it replaces an existing file, say so and suggest keeping a backup.]
+4. Copy `LoggerInterface.dll` into the SkyRoof main program folder..
+   It replaces an existing file, suggest keeping a backup.
 5. Start SkyRoof.
 
 ## Setting up AC Log
 
 1. In AC Log, open **Settings → Application Program Interface (API)**.
-2. Check **TCP API Enabled**. Leave the port at **[1100]** unless you've changed it.
-3. [Any other AC Log settings needed.]
+2. Check **TCP API Enabled**. Leave the port at **1100** unless you've changed it.
 
 ## Setting up SkyRoof
 
-1. [Steps to select or enable the plugin in SkyRoof.]
-2. [Where to enter the AC Log address/port, if needed. Default: `127.0.0.1`, port `[1100]`.]
+1. No setup changes are needed.
 
 ## Using it
 
@@ -56,16 +54,14 @@ with callbook details filled in. Upload to LoTW from AC Log as you normally do.
   of Installation), then re-copy the DLL.
 - **Antivirus warning.** Some antivirus programs flag unsigned DLLs. The full source code
   is in this repository if you'd like to review it or build it yourself.
-- **Callbook info is missing.** [Check callbook login/subscription settings.]
+- **Callbook info is missing.** Check callbook login/subscription settings
 
 ## Reporting problems
 
-Please open an [Issue](https://github.com/KV5J/SkyRoof-ACLog-Plugin/issues) and include
+Please open an Issue(https://github.com/KV5J/SkyRoof-ACLog-Plugin/issues) and include
 your SkyRoof and AC Log version numbers and a description of what happened.
 
-## Building from source
 
-[Visual Studio version / .NET version needed, and which project file to open.]
 
 ## Thanks
 
@@ -74,6 +70,6 @@ and its API.
 
 ## License
 
-MIT. See the [LICENSE](LICENSE) file. Free to use, modify, and share.
+MIT. See the (LICENSE) file. Free to use, modify, and share.
 
 73 de KV5J
