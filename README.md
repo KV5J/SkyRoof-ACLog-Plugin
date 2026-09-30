@@ -1,2 +1,2 @@
 # SkyRoof-ACLog-Plugin
-Plugin to log from SkyRoof directly to AClog
+SkyRoof logger plugin that sends satellite QSOs to N3FJP AC Log with callbook lookup.
