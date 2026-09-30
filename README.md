@@ -28,8 +28,8 @@ Written by Keith, KV5J.
    **Properties**, check **Unblock** at the bottom, and click **OK**.
    (Windows blocks downloaded DLLs, and SkyRoof may silently ignore a blocked plugin.)
 3. Close SkyRoof.
-4. Copy `LoggerInterface.dll` into the SkyRoof main program folder..
-   It replaces an existing file, suggest keeping a backup.
+4. Copy `LoggerInterface.dll and LoggerInterface,dll` into the SkyRoof main program folder..
+   They replaces existing files, I suggest keeping a backup.
 5. Start SkyRoof.
 
 ## Setting up AC Log
